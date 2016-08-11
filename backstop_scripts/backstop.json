@@ -1,0 +1,533 @@
+{
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "UI-demo - landing page",
+      "folder": "01-landing",
+      "url": "http:localhost:9000",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "#content",
+        "div[data-reactid=\".0.0\"]",
+        "section[data-reactid=\".0.1.0\"]",
+        "div.rwd-content",
+        "div[data-reactid=\".0.2\"]"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "02-components",
+      "label": "UI-demo components - overview",
+      "url": "http:localhost:9000/components/overview",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]"
+      ],
+      "selectors": [
+        "div.rwd-content"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "03-autosuggest",
+      "label": "UI-demo components - autosuggest",
+      "url": "http:localhost:9000/components/autosuggest",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "03a-autosuggest-clicked",
+      "label": "UI-demo components - autosuggest - clicked",
+      "url": "http:localhost:9000/components/autosuggest",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": "03a-autosuggest-clicked"
+    },
+    {
+      "folder": "03b-autosuggest-withinput",
+      "label": "UI-demo components - autosuggest - apply input",
+      "url": "http:localhost:9000/components/autosuggest",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": "03b-autosuggest-withinput"
+    },
+    {
+      "folder": "03c-autosuggest-itemhighlight",
+      "label": "UI-demo components - autosuggest - highlight menu item",
+      "url": "http:localhost:9000/components/autosuggest",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": "03c-autosuggest-itemhighlight"
+    },
+    {
+      "folder": "06-message-simple",
+      "label": "UI-demo components - message - simple",
+      "url": "http://localhost:9000/components/message-aloha",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(1) > article > div > div:nth-child(1)"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "07-calendar",
+      "label": "UI-demo components - calendar",
+      "url": "http:localhost:9000/components/calendar",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "section:nth-child(1) > article > div",
+        "section:nth-child(2) > article > div",
+        "section:nth-child(3) > article > div"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "08-draganddrop",
+      "label": "UI-demo components - drag and drop",
+      "url": "http:localhost:9000/components/drag-and-drop",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(1) > article > div",
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(2) > article > div > div:nth-child(1)"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "08a-draganddrop-dragitem",
+      "label": "UI-demo components - drag and drop - apply event",
+      "url": "http:localhost:9000/components/drag-and-drop",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(1) > article > div"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": "08a-draganddrop-dragitem"
+    },
+    {
+      "folder": "09-forms",
+      "label": "UI-demo components - forms",
+      "url": "http:localhost:9000/components/form",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "section:nth-child(1) article > div",
+        "section:nth-child(2) article > div",
+        "section:nth-child(3) article > div",
+        "section:nth-child(4) article > div",
+        "section:nth-child(5) article > div",
+        "section:nth-child(6) article > div"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "09a-forms-click-dropdown",
+      "label": "UI-demo components - forms",
+      "url": "http:localhost:9000/components/form",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "section:nth-child(2) article > div"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": "09a-forms-click-dropdown"
+    },
+    {
+      "folder": "10-grid-simple",
+      "label": "UI-demo components - grid simple",
+      "url": "http:localhost:9000/components/grid/grid-simple",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "div[data-reactid=\".0.1.0.1.$grid-simple/=1$grid-simple.$/=11.$=1$grid-simple-component\"]"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "11-grid-celltip",
+      "label": "UI-demo components - grid celltip",
+      "url": "http:localhost:9000/components/grid/grid-celltip",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "div[data-reactid=\".0.1.0.1.$grid-celltip/=1$grid-celltip.$/=11.$=1$grid-celltip-component.0\"]"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "11a-grid-celltip-expand",
+      "label": "UI-demo components - grid celltip",
+      "url": "http:localhost:9000/components/grid/grid-celltip",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "div[data-reactid=\".0.1.0.1.$grid-celltip/=1$grid-celltip.$/=11.$=1$grid-celltip-component.0\"]"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": "11a-grid-celltip-expand"
+    },
+    {
+      "folder": "11b-grid-celltip-tooltip",
+      "label": "UI-demo components - grid celltip",
+      "url": "http:localhost:9000/components/grid/grid-celltip",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "div[data-reactid=\".0.1.0.1.$grid-celltip/=1$grid-celltip.$/=11.$=1$grid-celltip-component.0\"]"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": "11b-grid-celltip-tooltip"
+    },
+    {
+      "folder": "12-grid-hierarchy",
+      "label": "UI-demo components - grid hierarchy",
+      "url": "http:localhost:9000/components/grid/grid-hierachy",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section > article > div > div:nth-child(1)"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "19-table",
+      "label": "UI-demo components - table",
+      "url": "http:localhost:9000/components/table",
+      "hideSelectors": [],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(1) > article > div > table",
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(2) > article > div > table",
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(3) > article > div > table",
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(5) > article > div > table"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "20-tooltip-simple",
+      "label": "UI-demo components - tooltip - simple",
+      "url": "http:localhost:9000/components/tooltip",
+      "hideSelectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(2)"
+      ],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2)"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "folder": "20a-tooltip-simple-hoversimpletext",
+      "label": "UI-demo components - tooltip - simple",
+      "url": "http:localhost:9000/components/tooltip",
+      "hideSelectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(2)"
+      ],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2)"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": "20a-tooltip-simple-hoversimpletext"
+    },
+    {
+      "folder": "20b-tooltip-simple-hoversimplehtml",
+      "label": "UI-demo components - tooltip - simple",
+      "url": "http:localhost:9000/components/tooltip",
+      "hideSelectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(2)"
+      ],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2)"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": "20b-tooltip-simple-hoversimplehtml"
+    },
+    {
+      "folder": "20c-tooltip-simple-hovericon",
+      "label": "UI-demo components - tooltip - simple",
+      "url": "http:localhost:9000/components/tooltip",
+      "hideSelectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(2)"
+      ],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2)"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": "20c-tooltip-simple-hovericon"
+    },
+    {
+      "folder": "20d-tooltip-simple-hovermessage",
+      "label": "UI-demo components - tooltip - simple",
+      "url": "http:localhost:9000/components/tooltip",
+      "hideSelectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(2)"
+      ],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2)"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": "20d-tooltip-simple-hovermessage"
+    },
+    {
+      "folder": "21-tooltip-custom",
+      "label": "UI-demo components - tooltip - custom",
+      "url": "http:localhost:9000/components/tooltip",
+      "hideSelectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2) > section:nth-child(1)"
+      ],
+      "removeSelectors": [
+        "div[data-reactid=\".0.0\"]",
+        "div[data-reactid=\".0.2\"]",
+        "div[data-reactid=\".0.1.0.0\"]",
+        ".demo-doc"
+      ],
+      "selectors": [
+        "#content > div > div.rwd-content > div > div:nth-child(2)"
+      ],
+      "readyEvent": null,
+      "delay": 250,
+      "misMatchThreshold": 0.05,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "../../backstop_data/baseline",
+    "bitmaps_test": "../../backstop_data/compared",
+    "compare_data": "../../backstop_data/compared/compare.json",
+    "casper_scripts": "../../backstop_scripts/casper_scripts",
+    "ci_report": "../../backstop_data/jenkins_report"
+  },
+  "engine": "slimerjs",
+  "report": [
+    "browser",
+    "CI",
+    "CLI"
+  ],
+  "ci": {
+    "format": "junit",
+    "reportFileName": "ui-demo-css-test",
+    "testSuiteName": "ui-demo-css-test"
+  },
+  "casperFlags": [],
+  "debug": false,
+  "port": 3333,
+  "checksum": "32dbaa7f608327f61fb17a302754762bcadc15b4"
+}
