@@ -21,8 +21,8 @@ module.exports = {
   report: ['browser', 'CI', 'CLI'],
   ci: {
     format: 'junit',
-    reportFileName: 'ui-demo-css-test',
-    testSuiteName: 'ui-demo-css-test'
+    reportFileName: 'junit',
+    testSuiteName: 'UI Demo CSS Test'
   },
   casperFlags: [],
   debug: false,
